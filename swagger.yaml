@@ -71,16 +71,16 @@ paths:
                 properties:
                   username:
                     type: string
-                    example: "rahul"
+                    example: "afeez"
                   password:
                     type: string
                     example: "password"
               iat:
                 type: integer
-                example: 1517506337
+                example: 1234567890
               exp:
                 type: integer
-                example: 1518370337
+                example: 1234567890
         400:
           description: Parameter(s) Missing.
           schema:
