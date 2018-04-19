@@ -2,7 +2,7 @@ swagger: "2.0"
 host: localhost:8080
 schemes: [http]
 info: 
-  title: SC Node Task
+  title: Microservice Node Task
   description: API for Authentication, JSON Patching, and Thumbnail Generation.
   version: 1.0.0
 paths:
