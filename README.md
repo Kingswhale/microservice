@@ -1,7 +1,5 @@
 # Microservice Node Task
 
-[![Build Status](https://travis-ci.org/itch96/social-cops-challenge.svg?branch=master)](https://travis-ci.org/itch96/social-cops-challenge)
-[![Coverage Status](https://coveralls.io/repos/github/itch96/social-cops-challenge/badge.svg?branch=master)](https://coveralls.io/github/itch96/social-cops-challenge?branch=master)
 ___  
 
 ## Requirements  
@@ -16,13 +14,13 @@ The API features the following endpoint functionalities
 
 **Public Endpoints**  
 1. */login*
-    * Request body should contain an arbitrary username/password pair
+    * Request body should contain username/password
     * Treat it as a mock authentication service and accept any username/password.
     * Return a signed [Json Web Token](https://jwt.io/) which can be used to validate future requests.
 
 **Protected Endpoints**  
 
-The following two endpoints should be protected. The JWT obtained in the _/login_ endpoint must be attached to each request.  If the JWT is missing or invalid, these endpoints should reject the request.
+The below given two endpoints are protected. The JWT obtained in the _/login_ endpoint must be attached to each request.  If the JWT is missing or invalid, these endpoints should reject the request.
 1. */api/apply_json_patch*
     * Request body should contain a JSON object and a [JSON patch object](http://jsonpatch.com/).
     * Apply the json patch to the json object, and return the resulting json object.
@@ -47,7 +45,7 @@ ___
 ## INSTRUCTIONS
 1. Clone the repository
   ```
-  $> git clone https://github.com/itch96/social-cops-challenge.git
+  $> git clone https://github.com/Kingswhale/microservice.git
   ```
 2. Install all the dependencies. Make sure you are inside the `social-cops-challenge` folder.
   ```
