@@ -40,13 +40,10 @@ ___
     * Project contains documentation with setup and usage instructions.
     * Project installs all dependencies with `npm install`, starts the server with `npm start`, and runs the test suite with `npm test`.
 3. Bonus Points
-    * 100% code coverage in test suite by [Istanbul](https://github.com/gotwarlost/istanbul).
     * Included Swagger specifications. Copy paste the contents of swagger.yaml to [Swagger](http://editor.swagger.io).
     * Integrated a centralized app logging/monitoring system using `morgan`.
     * Used [esLint](https://eslint.org) for Javascript Style and Linting.
-    * ~~Include a working Dockerfile with the app directory.~~
-___
-
+   
 ## INSTRUCTIONS
 1. Clone the repository
   ```
@@ -67,7 +64,6 @@ ___
   $> npm start
   ```
 6. Use your favourite REST client to test HTTP tools. **Make sure you are runnig the API server before moving forward. See step (5).**
-    * I prefer [Insomnia](https://insomnia.rest). 
-    * You could also use [POSTman](https://www.getpostman.com).
+    * I prefer to use [POSTman](https://www.getpostman.com).
 7. You can test the endpoints.
     * The protected endpoints **should include JWT in the header as `token`** for them to respond successfully.
