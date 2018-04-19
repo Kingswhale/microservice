@@ -2,23 +2,23 @@
 
 ___  
 
-## Requirements  
-My task is to build a simple stateless microservice in Nodejs, with three major functionalities -
+My Task to build a simple stateless microservice in Nodejs:
+## Required Functionality  
 1. Authentication
 2. JSON patching
 3. Image Thumbnail Generation
 ___
 
-### Endpoints
-The API features the following endpoint functionalities  
+### My Endpoints
+My endpoint functionalities  
 
-**Public Endpoints**  
+**Public**  
 1. */login*
     * Request body should contain username/password
-    * Treat it as a mock authentication service and accept any username/password.
+    * Mock authentication service and accept any username/password.
     * Return a signed [Json Web Token](https://jwt.io/) which can be used to validate future requests.
 
-**Protected Endpoints**  
+**Protected**  
 
 The below given two endpoints are protected. The JWT obtained in the _/login_ endpoint must be attached to each request.  If the JWT is missing or invalid, these endpoints should reject the request.
 1. */api/apply_json_patch*
@@ -47,20 +47,11 @@ ___
   ```
   $> git clone https://github.com/Kingswhale/microservice.git
   ```
-2. Install all the dependencies. Make sure you are inside the `social-cops-challenge` folder.
-  ```
-  $> npm install
-  ```
+2. Install all the dependencies. Make sure you are inside the `microservice` folder.`$> npm install`
 3. See all the test cases pass.
-    * Make sure you are connected to the internet for the */api/create_thumbnail* endpoint as the image is fetched from the internet.
-  ```
-  $> npm test
-  ```
+    * Make sure you are connected to the internet for the */api/create_thumbnail* endpoint as the image is fetched from the internet.`$> npm test`
 4. Copy the contents of [swagger.yaml](./swagger.yaml) file and paste it in the [Editor](http://editor.swagger.io) to better understand the API.
-5. Start the API server.
-  ```
-  $> npm start
-  ```
+5. Start the API server.`$> npm start`
 6. Use your favourite REST client to test HTTP tools. **Make sure you are runnig the API server before moving forward. See step (5).**
     * I prefer to use [POSTman](https://www.getpostman.com).
 7. You can test the endpoints.
